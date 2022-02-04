@@ -68,7 +68,7 @@ Decision to drop 'Enclosed Porch' and 'Fence' as there is no significan trend or
 - Based on the cross validation of 4 models (`Linear Regression`, `Lasso`, `Ridge`, and `Elastic Net`), `Ridge` best efficient to eliminate multicollinearity in data models and will be used as the selected model
 - Running `Ridge` on the test data reveals a plot of predicted vs actuals as follows
 ![Ridge](./Image/Ridge.png)<br>
-- The `Ridge` R2 score is 0.965 and with RMSE of 11,771
+- The `Ridge` R2 score is 0.965 and with RMSE of 12,350
 - The residuals also follow a normal distribution
 
 ### Recommendations & Conclusion
