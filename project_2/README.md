@@ -32,22 +32,22 @@ Baseline score is -0.014 and RMSE is 80,279.17
 
 ### Exploratory Data Analysis
 **Box plots**
-(./Image/Ordinal_boxplot.png)
+![Ordinal_boxplot](./Image/Ordinal_boxplot.png)
 The 20 ordinal features plotted above, they seem to have slight or significant impact for the sales price, thus, we will not drop any of the columns.<br>
 **EXCEPT** for 'Lot Shape', 'Land Slope', 'Pool QC' because there are no relative trend or pattern for the price changes
 
 **Correlation**
-(./Image/Correlation.png)
+![Correlation](./Image/Correlation.png)
 Dropping nominal columns that have less that 0.05 and more than -0.05 correlations, except for those relevant categorical or date columns
 
 **Outlier**
-(./Image/Outliner.png)
+![Outliner](./Image/Outliner.png)
 Assumption - with all the plots above, it seems that they are all relevant from slight to significant impact on the sales price. thus, we will remain all these columns. <br>
 **EXCEPT** for 'Screen Porch','Misc Feature','Bldg Type','Kitchen AbvGr', 'Wood Deck SF' and 'Alley' because there are no relative trend or pattern for the price changes <br>
 **Note** - Observed that most of the outliers appears to be more than 450,000 in sales price, thus, decision to filter out sales price that has more than 450,000.
 
 **Emphasis on Outlier**
-(./Image/Outliner_2.png)
+![Outliner_2](./Image/Outliner_2.png)
 further emphasis on 'Garage Cars','Garage Area','Gr Liv Area','1st Flr SF' to identify the outlier to drop.
 
 
@@ -56,18 +56,18 @@ further emphasis on 'Garage Cars','Garage Area','Gr Liv Area','1st Flr SF' to id
 'Year Built' and 'Year Remod/Add' are significant factors for the price vary as the building gets old, the price will fall, so called the depreciation factor. Thus, converting to both 'Year Built' and 'Year Remod/Add' to age for aggregation purpose.<br>
 <b>Assumption</b> - selling price will be revaluated from 'Year Remod/Add'. Therefore, we will be ignoring 'Year Built'. <br>
 <b>Note</b> - dropping 'Age sold' that is less than zero, assuming price sold was just the price of the land which will be irrelevant to our analysis.
-(./Image/Age_Sold.png)
+![Age_Sold](./Image/Age_Sold.png)
  =*= Above graph further proves that the price will fall as age grows =*=
 
 **After dropping Outlier**
-(./Image/After_outlier.png)
+![After_outlier](./Image/After_outlier.png)
 Decision to drop 'Enclosed Porch' and 'Fence' as there is no significan trend or impact to the Sales Price
 
 
 ### Model Selection and Evaluation
 - Based on the cross validation of 4 models (`Linear Regression`, `Lasso`, `Ridge`, and `Elastic Net`), `Ridge` best efficient to eliminate multicollinearity in data models and will be used as the selected model
 - Running `Ridge` on the test data reveals a plot of predicted vs actuals as follows
-(./Image/Ridge.png)
+![Ridge](./Image/Ridge.png)
 - The `Ridge` R2 score is 0.965 and with RMSE of 11,771
 - The residuals also follow a normal distribution
 
