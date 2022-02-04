@@ -37,7 +37,7 @@ The 20 ordinal features plotted above, they seem to have slight or significant i
 **EXCEPT** for 'Lot Shape', 'Land Slope', 'Pool QC' because there are no relative trend or pattern for the price changes
 
 **Correlation**
-![Correlation](./Image/Correlation.png)<br>
+![Correlation](./Image/Correlation.PNG)<br>
 Dropping nominal columns that have less that 0.05 and more than -0.05 correlations, except for those relevant categorical or date columns
 
 **Outlier**
