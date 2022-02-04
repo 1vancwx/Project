@@ -41,13 +41,13 @@ The 20 ordinal features plotted above, they seem to have slight or significant i
 Dropping nominal columns that have less that 0.05 and more than -0.05 correlations, except for those relevant categorical or date columns
 
 **Outlier**
-![Outliner](./Image/Outliner.png)
+![Outliner](./Image/Outlier.png)
 Assumption - with all the plots above, it seems that they are all relevant from slight to significant impact on the sales price. thus, we will remain all these columns. <br>
 **EXCEPT** for 'Screen Porch','Misc Feature','Bldg Type','Kitchen AbvGr', 'Wood Deck SF' and 'Alley' because there are no relative trend or pattern for the price changes <br>
 **Note** - Observed that most of the outliers appears to be more than 450,000 in sales price, thus, decision to filter out sales price that has more than 450,000.
 
 **Emphasis on Outlier**
-![Outliner_2](./Image/Outliner_2.png)
+![Outliner_2](./Image/Outlier_2.png)
 further emphasis on 'Garage Cars','Garage Area','Gr Liv Area','1st Flr SF' to identify the outlier to drop.
 
 
