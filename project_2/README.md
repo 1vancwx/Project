@@ -56,7 +56,7 @@ further emphasis on 'Garage Cars','Garage Area','Gr Liv Area','1st Flr SF' to id
 'Year Built' and 'Year Remod/Add' are significant factors for the price vary as the building gets old, the price will fall, so called the depreciation factor. Thus, converting to both 'Year Built' and 'Year Remod/Add' to age for aggregation purpose.<br>
 <b>Assumption</b> - selling price will be revaluated from 'Year Remod/Add'. Therefore, we will be ignoring 'Year Built'. <br>
 <b>Note</b> - dropping 'Age sold' that is less than zero, assuming price sold was just the price of the land which will be irrelevant to our analysis.
-![Age_Sold](./Image/Age_Sold.png)
+![Age_Sold](./Image/Age_Sold.png)<br>
  =*= Above graph further proves that the price will fall as age grows =*=
 
 **After dropping Outlier**
