@@ -36,7 +36,7 @@ Baseline score is -0.014 and RMSE is 80,279.17
 The 20 ordinal features plotted above, they seem to have slight or significant impact for the sales price, thus, we will not drop any of the columns.<br>
 **EXCEPT** for 'Lot Shape', 'Land Slope', 'Pool QC' because there are no relative trend or pattern for the price changes
 
-**Correlation**
+**Correlation**<br>
 ![Correlation](./Image/Correlation.PNG)<br>
 Dropping nominal columns that have less that 0.05 and more than -0.05 correlations, except for those relevant categorical or date columns
 
