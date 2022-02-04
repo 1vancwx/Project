@@ -32,22 +32,22 @@ Baseline score is -0.014 and RMSE is 80,279.17
 
 ### Exploratory Data Analysis
 **Box plots**
-![Ordinal_boxplot](./Image/Ordinal_boxplot.png)
+![Ordinal_boxplot](./Image/Ordinal_boxplot.png)<br>
 The 20 ordinal features plotted above, they seem to have slight or significant impact for the sales price, thus, we will not drop any of the columns.<br>
 **EXCEPT** for 'Lot Shape', 'Land Slope', 'Pool QC' because there are no relative trend or pattern for the price changes
 
 **Correlation**
-![Correlation](./Image/Correlation.png)
+![Correlation](./Image/Correlation.png)<br>
 Dropping nominal columns that have less that 0.05 and more than -0.05 correlations, except for those relevant categorical or date columns
 
 **Outlier**
-![Outliner](./Image/Outlier.png)
+![Outliner](./Image/Outlier.png)<br>
 Assumption - with all the plots above, it seems that they are all relevant from slight to significant impact on the sales price. thus, we will remain all these columns. <br>
 **EXCEPT** for 'Screen Porch','Misc Feature','Bldg Type','Kitchen AbvGr', 'Wood Deck SF' and 'Alley' because there are no relative trend or pattern for the price changes <br>
 **Note** - Observed that most of the outliers appears to be more than 450,000 in sales price, thus, decision to filter out sales price that has more than 450,000.
 
 **Emphasis on Outlier**
-![Outliner_2](./Image/Outlier_2.png)
+![Outliner_2](./Image/Outlier_2.png)<br>
 further emphasis on 'Garage Cars','Garage Area','Gr Liv Area','1st Flr SF' to identify the outlier to drop.
 
 
@@ -60,14 +60,14 @@ further emphasis on 'Garage Cars','Garage Area','Gr Liv Area','1st Flr SF' to id
  =*= Above graph further proves that the price will fall as age grows =*=
 
 **After dropping Outlier**
-![After_outlier](./Image/After_outlier.png)
+![After_outlier](./Image/After_outlier.png)<br>
 Decision to drop 'Enclosed Porch' and 'Fence' as there is no significan trend or impact to the Sales Price
 
 
 ### Model Selection and Evaluation
 - Based on the cross validation of 4 models (`Linear Regression`, `Lasso`, `Ridge`, and `Elastic Net`), `Ridge` best efficient to eliminate multicollinearity in data models and will be used as the selected model
 - Running `Ridge` on the test data reveals a plot of predicted vs actuals as follows
-![Ridge](./Image/Ridge.png)
+![Ridge](./Image/Ridge.png)<br>
 - The `Ridge` R2 score is 0.965 and with RMSE of 11,771
 - The residuals also follow a normal distribution
 
