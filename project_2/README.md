@@ -24,7 +24,7 @@ There is one additional parameter engineering along the way
 |`Age Sold`|Numerical > 0|Represent the Years sold upon last remodeling/adding|
 
 ### Data Cleaning
-Observed that there were 20 columns that has null values. Created function to identify numeric columns and string columns. Thereafter, for numeric columns to be filled up with zero and for string columns to be filled up as 'NA'.
+Observed that there were 20 columns that has null values. Created function to identify numeric columns and string columns. Thereafter, for numeric columns to be filled up with zero and for string columns to be filled up as 'NA'. Assumption for filling Zero for numerical features and NaN for categorical features is that is it not missing data but the property does not have such utility.
 
 ### Initial Feature Engineering
 Create dummy and function to dump everything into linearRegression model to create a baseline/Null hypothesis for later use.
