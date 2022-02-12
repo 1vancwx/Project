@@ -89,4 +89,5 @@ Improving the quality of these 3 areas will have the highest impact in the value
 ### Limitations
 The model that used has shown to be rather accurate at predicting properties. However. this model runs on past records and is only as good as how recent the database is. While it may be quite accurate in terms of predicting the value of a property in the next 1 or 2 years, it will not be able to predict the potential value in a long run (5 or more years) for investment purposes.
 
-
+### Kaggle result
+![Result](./Image/Result.png)<br>
