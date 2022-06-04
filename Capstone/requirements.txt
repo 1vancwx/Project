@@ -1,0 +1,12 @@
+pandas==1.4.0
+fbprophet
+pystan==2.19.1.1
+numpy
+sklearn
+statsmodels==0.12.2
+pmdarima==1.8.5
+scipy==1.5.4
+mlxtend-0.20.0
+implicit==0.5.2
+re
+plotly
