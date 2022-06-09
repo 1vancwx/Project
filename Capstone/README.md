@@ -1,5 +1,9 @@
 # Capstone - Cross-selling products and sales prediction
 
+## https://nbviewer.org/github/1vancwx/Project/blob/main/Capstone/Med.ipynb
+## https://nbviewer.org/github/1vancwx/Project/blob/main/Capstone/Modeling.ipynb
+Please click on above links to look at the codings for this project.
+
 ### Problem Statement
 
 A Medical Multi-National Company based in Singapore is seeking opportunities to increase the market share across South-east Asia. 
